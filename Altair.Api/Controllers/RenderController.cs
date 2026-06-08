@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Altair.Api.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("v1/[controller]")]
 public class RenderController : ControllerBase
 {
     private readonly IRenderUseCase _renderUseCase;
