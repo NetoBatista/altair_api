@@ -1,4 +1,4 @@
-#### [🇧🇷 Português (PT-BR)](README.pt-BR.md)
+#### [🇧🇷 Português (PT-BR)](README.pt.md)
 
 # Altair API
 
