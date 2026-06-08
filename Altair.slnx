@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Altair.Api/Altair.Api.csproj" />
+  <Project Path="Altair.Application/Altair.Application.csproj" />
+  <Project Path="Altair.Domain/Altair.Domain.csproj" />
+</Solution>
