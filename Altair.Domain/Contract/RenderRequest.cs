@@ -14,6 +14,11 @@ public class RenderRequest
     /// Specifies the type of content being provided. Valid values are "html" for raw HTML content and "url" for a web page URL. This property is required and must be one of the specified values.
     /// </summary>
     [Required]
-    [RegularExpression($"^({RenderTypeConstant.Html}|{RenderTypeConstant.Url})$", ErrorMessage = "Type must be either 'html' or 'url'.")]
+    [RegularExpression($"{RenderTypeConstant.Html}|{RenderTypeConstant.Url}", ErrorMessage = "Type must be either 'html' or 'url'.")]
     public string Type { get; set; } = null!;
+
+    /// <summary>
+    /// Optional settings for the generated PDF.
+    /// </summary>
+    public RenderOptions? Options { get; set; }
 }

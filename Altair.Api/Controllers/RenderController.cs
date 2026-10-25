@@ -18,6 +18,6 @@ public class RenderController : ControllerBase
     public async Task<ActionResult<Stream>> Render([FromBody] RenderRequest request)
     {
         var result = await _renderUseCase.ExecuteAsync(request);
-        return File(result, "application/pdf");
+        return File(result.Content, "application/pdf", result.FileName);
     }
 }
