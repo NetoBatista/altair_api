@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Altair.Api.Controllers;
 
-[Route("api/[controller]")]
+[Route("v1/[controller]")]
 [ApiController]
 public class PingController : ControllerBase
 {
